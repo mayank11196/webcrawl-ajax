@@ -1,0 +1,4 @@
+beautifulsoup4==4.5.3
+lxml==3.7.3
+selenium==3.3.1
+ChromeWebdriver = https://sites.google.com/a/chromium.org/chromedriver/downloads
