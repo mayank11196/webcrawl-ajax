@@ -46,7 +46,11 @@ def get_vat_details(firm_name):
 
 	# Getting the html content of the page
 	html_content = driver.page_source
-	soup = BeautifulSoup(html_content, 'lxml')
+	try:
+		soup = BeautifulSoup(html_content, 'lxml')
+	except AttributeError as e:
+		print(e)
+		sys.exit(1)
 
 	# Extracting data from the table
 	right_table = soup.findAll('table', class_ = 'tab3')
