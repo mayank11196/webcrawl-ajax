@@ -79,7 +79,7 @@ def get_vat_details(firm_name):
 				company_dict = {}
 				for i in range(len(single_list)):
 					if i==1:
-						company_dict['Firm Nmae'] = single_list[i]
+						company_dict['Firm Name'] = single_list[i]
 					if i==2:
 						company_dict['TIN'] = single_list[i]
 					if i==3:
